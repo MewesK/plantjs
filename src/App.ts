@@ -1,16 +1,15 @@
 import * as BABYLON from "babylonjs";
 
+export type SceneFactory = (
+  engine: BABYLON.Engine,
+  canvas: HTMLCanvasElement
+) => BABYLON.Scene;
+
 export class App {
   engine: BABYLON.Engine;
   scene: BABYLON.Scene;
 
-  constructor(
-    readonly canvas: HTMLCanvasElement,
-    sceneFactory: (
-      engine: BABYLON.Engine,
-      canvas: HTMLCanvasElement
-    ) => BABYLON.Scene
-  ) {
+  constructor(readonly canvas: HTMLCanvasElement, sceneFactory: SceneFactory) {
     this.engine = new BABYLON.Engine(canvas);
     this.scene = sceneFactory(this.engine, canvas);
     window.addEventListener("resize", () => {

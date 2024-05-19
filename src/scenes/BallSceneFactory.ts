@@ -1,9 +1,7 @@
 import * as BABYLON from "babylonjs";
+import { SceneFactory } from "../App";
 
-export function createPlantScene(
-  engine: BABYLON.Engine,
-  canvas: HTMLCanvasElement
-) {
+export const createScene: SceneFactory = function (engine, canvas) {
   const scene = new BABYLON.Scene(engine);
   const camera = new BABYLON.FreeCamera(
     "camera1",
@@ -75,4 +73,4 @@ export function createPlantScene(
   });
 
   return scene;
-}
+};
