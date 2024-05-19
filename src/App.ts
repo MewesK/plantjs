@@ -26,7 +26,6 @@ export class App {
   }
 
   run() {
-    this.debug(true);
     this.engine.runRenderLoop(() => {
       this.scene.render();
     });
