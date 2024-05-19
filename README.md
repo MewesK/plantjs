@@ -1,13 +1,11 @@
-# BabylonJs + vite Boilerplate
+# PlantJS
 
 ## Description
 
-This is a BabylonJS + vite minimal boilerplate for development and production to work with **typescript**. 
-It starts faster than webpack and allow debugging from vscode.
+BabylonJS + TypeScript + vite
 
-## instructions
+## Instructions
 
-- clone or download the repo
 - npm install
 - For development: `npm run dev`
 - For production: `npm run build` then to preview what was built `npm run preview`
@@ -15,10 +13,6 @@ It starts faster than webpack and allow debugging from vscode.
 ## Development mode and debugging
 First `npm run dev`
 Then in vscode press F5, otherwise just open a browser at http://localhost:3000/
-
-## Live Demo
-You can see this repository live here:
-https://babylonjs-vite-boilerplate.vercel.app/
 
 ## Production build
 First `npm run build`
@@ -40,12 +34,5 @@ This is where you should place all your application code.
 ### /src/main.ts
 This is the entry point of the app. 
 
-### /src/AppOne.ts
+### /src/App.ts
 A sample app that copy the code from the babylon.js playground.
-
-## Thank you!
-
-Thank you for using it, feel free to contribute in any way you can/want, just keep in mind that this should stay as a very mimimalistic boilerplate. 
-If you'd like to add complexity just fork it and let me know when you're done, so that I might reference it here in case someone comes looking for a more opinionated environment.
-
-Enjoy!
