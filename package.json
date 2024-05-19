@@ -5,12 +5,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "npx prettier . --write"
   },
   "dependencies": {
     "babylonjs": "^7.7.0"
   },
   "devDependencies": {
+    "prettier": "latest",
     "typescript": "latest",
     "vite": "latest"
   },
