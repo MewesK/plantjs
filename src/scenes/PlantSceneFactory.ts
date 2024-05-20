@@ -36,7 +36,7 @@ export const createScene: SceneFactory = function (engine, canvas, havokInstance
   const physicsPlugin = new BABYLON.HavokPlugin(true, havokInstance);
   scene.enablePhysics(gravityVector, physicsPlugin);
 
-  // Sphere Physics Aggregate. Size will be determined automatically.
+  // Sphere Physics Aggregate
   new BABYLON.PhysicsAggregate(
     sphere,
     BABYLON.PhysicsShapeType.SPHERE,
@@ -44,7 +44,7 @@ export const createScene: SceneFactory = function (engine, canvas, havokInstance
     scene
   );
 
-  // Ground Physics Aggregate. Size will be determined automatically.
+  // Ground Physics Aggregate
   new BABYLON.PhysicsAggregate(ground, BABYLON.PhysicsShapeType.BOX, { mass: 0 }, scene);
 
   return scene;

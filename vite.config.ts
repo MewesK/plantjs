@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(({ command, mode }) => {
   return {
+    base: '/plantjs/',
     build: {
       chunkSizeWarningLimit: 10000,
     },
