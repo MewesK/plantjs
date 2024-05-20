@@ -1,6 +1,11 @@
+import { HavokPhysicsWithBindings } from '@babylonjs/havok';
 import * as BABYLON from 'babylonjs';
 
-export type SceneFactory = (engine: BABYLON.Engine, canvas: HTMLCanvasElement) => BABYLON.Scene;
+export type SceneFactory = (
+  engine: BABYLON.Engine,
+  canvas: HTMLCanvasElement,
+  havokInstance?: HavokPhysicsWithBindings
+) => BABYLON.Scene;
 
 export class App {
   engine: BABYLON.Engine;
